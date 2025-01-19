@@ -1,0 +1,35 @@
+name: ExiStrike
+version: '0.1.0'
+summary: advanced pentest framework
+description: |
+  This framework was developed by Expiravit PMC and any use of it for malicious purposes is totally repudiated by us, we are not responsible for your actions.
+
+base: core18
+confinement: strict
+
+apps:
+  myframework:
+    command: bin/ExiStrike.py
+    plugs:
+      - network
+      - home
+      - removable-media
+
+parts:
+  myframework:
+    plugin: python
+    python-version: python3
+    source: .
+    source-type: directory
+    stage-packages:
+      - python3-pip
+      - python3-setuptools
+    build-packages:
+      - build-essential
+      - python3-dev
+    requirements:
+      - requirements.txt
+    install:
+      - pip3 install --no-deps -r requirements.txt
+
+# Optional: If you have other parts that need to be included separately, add them here
