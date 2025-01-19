@@ -34,10 +34,11 @@ This is the public repository of the **ExiStrike** framework, developed by **Exp
 
 ## 📍Project structure
 ExiStrike/
-├── exploits/         # Exploitation tools
-├── scans/            # Scanning utilities
-├── auxiliaries/      # Auxiliary tools
-├── accounts/         # User account management
-├── output/           # Logs and reports
-├── requirements.txt  # Project dependencies
-└── ExiStrike         # Main script
+
+├── exploits/ # Exploitation tools
+├── scans/ # Scanning utilities
+├── auxiliaries/ # Auxiliary tools
+├── accounts/ # User account management
+├── output/ # Logs and reports
+├── requirements.txt # Project dependencies
+└── ExiStrike # Main script
